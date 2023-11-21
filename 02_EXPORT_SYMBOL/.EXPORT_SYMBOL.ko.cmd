@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/02_EXPORT_SYMBOL/EXPORT_SYMBOL.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/02_EXPORT_SYMBOL/EXPORT_SYMBOL.ko /home/scd/IMX6ULL/module/newmodule/02_EXPORT_SYMBOL/EXPORT_SYMBOL.o /home/scd/IMX6ULL/module/newmodule/02_EXPORT_SYMBOL/EXPORT_SYMBOL.mod.o

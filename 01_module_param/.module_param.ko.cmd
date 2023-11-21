@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/module_param/module_param.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/module_param/module_param.ko /home/scd/IMX6ULL/module/newmodule/module_param/module_param.o /home/scd/IMX6ULL/module/newmodule/module_param/module_param.mod.o

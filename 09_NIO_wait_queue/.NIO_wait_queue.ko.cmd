@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/09_NIO_wait_queue/NIO_wait_queue.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/09_NIO_wait_queue/NIO_wait_queue.ko /home/scd/IMX6ULL/module/newmodule/09_NIO_wait_queue/NIO_wait_queue.o /home/scd/IMX6ULL/module/newmodule/09_NIO_wait_queue/NIO_wait_queue.mod.o

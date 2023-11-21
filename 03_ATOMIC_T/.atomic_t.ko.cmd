@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/03_ATOMIC_T/atomic_t.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/03_ATOMIC_T/atomic_t.ko /home/scd/IMX6ULL/module/newmodule/03_ATOMIC_T/atomic_t.o /home/scd/IMX6ULL/module/newmodule/03_ATOMIC_T/atomic_t.mod.o

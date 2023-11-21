@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/07_mutex/mutex.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/07_mutex/mutex.ko /home/scd/IMX6ULL/module/newmodule/07_mutex/mutex.o /home/scd/IMX6ULL/module/newmodule/07_mutex/mutex.mod.o

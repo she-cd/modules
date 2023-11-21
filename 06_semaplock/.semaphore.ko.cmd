@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/06_semaplock/semaphore.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/06_semaplock/semaphore.ko /home/scd/IMX6ULL/module/newmodule/06_semaplock/semaphore.o /home/scd/IMX6ULL/module/newmodule/06_semaplock/semaphore.mod.o

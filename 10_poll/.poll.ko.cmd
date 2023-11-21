@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/010_poll/poll.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/010_poll/poll.ko /home/scd/IMX6ULL/module/newmodule/010_poll/poll.o /home/scd/IMX6ULL/module/newmodule/010_poll/poll.mod.o

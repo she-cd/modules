@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/04_spinlock/spinlock.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/04_spinlock/spinlock.ko /home/scd/IMX6ULL/module/newmodule/04_spinlock/spinlock.o /home/scd/IMX6ULL/module/newmodule/04_spinlock/spinlock.mod.o
