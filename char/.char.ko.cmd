@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/char/char.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/char/char.ko /home/scd/IMX6ULL/module/class16/char/char.o /home/scd/IMX6ULL/module/class16/char/char.mod.o
