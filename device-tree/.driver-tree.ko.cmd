@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/device-tree/driver-tree.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/device-tree/driver-tree.ko /home/scd/IMX6ULL/module/class16/device-tree/driver-tree.o /home/scd/IMX6ULL/module/class16/device-tree/driver-tree.mod.o

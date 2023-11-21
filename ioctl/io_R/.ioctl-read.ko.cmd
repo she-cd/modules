@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/ioctl/io_R/ioctl-read.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/ioctl/io_R/ioctl-read.ko /home/scd/IMX6ULL/module/class16/ioctl/io_R/ioctl-read.o /home/scd/IMX6ULL/module/class16/ioctl/io_R/ioctl-read.mod.o

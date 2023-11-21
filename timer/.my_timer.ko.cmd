@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/timer/my_timer.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/timer/my_timer.ko /home/scd/IMX6ULL/module/class16/timer/my_timer.o /home/scd/IMX6ULL/module/class16/timer/my_timer.mod.o

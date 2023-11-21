@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/12_llseek/llseek.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/12_llseek/llseek.ko /home/scd/IMX6ULL/module/newmodule/12_llseek/llseek.o /home/scd/IMX6ULL/module/newmodule/12_llseek/llseek.mod.o

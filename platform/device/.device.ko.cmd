@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/platform/device/device.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/platform/device/device.ko /home/scd/IMX6ULL/module/class16/platform/device/device.o /home/scd/IMX6ULL/module/class16/platform/device/device.mod.o

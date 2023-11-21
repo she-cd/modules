@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/platform/driver/driver.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/platform/driver/driver.ko /home/scd/IMX6ULL/module/class16/platform/driver/driver.o /home/scd/IMX6ULL/module/class16/platform/driver/driver.mod.o

@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/newmodule/011_signal/signal.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/newmodule/011_signal/signal.ko /home/scd/IMX6ULL/module/newmodule/011_signal/signal.o /home/scd/IMX6ULL/module/newmodule/011_signal/signal.mod.o

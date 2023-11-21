@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/class16/ioctl/io_W/ioctl-write.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/class16/ioctl/io_W/ioctl-write.ko /home/scd/IMX6ULL/module/class16/ioctl/io_W/ioctl-write.o /home/scd/IMX6ULL/module/class16/ioctl/io_W/ioctl-write.mod.o
