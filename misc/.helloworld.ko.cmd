@@ -1,0 +1,1 @@
+cmd_/home/scd/IMX6ULL/module/misc/helloworld.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/scd/IMX6ULL/module/misc/helloworld.ko /home/scd/IMX6ULL/module/misc/helloworld.o /home/scd/IMX6ULL/module/misc/helloworld.mod.o
