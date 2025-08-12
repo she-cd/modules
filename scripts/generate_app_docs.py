@@ -14,13 +14,15 @@ def render(template: str, ctx: dict) -> str:
     # We'll pre-expand the features list and a few nested fields manually
     text = template
     # features loop
-    if '{{features' in text:
+    # Detect and expand a simple for-loop block: {% for f in features %}...{% endfor %}
+    if '{% for f in features %}' in text:
         loop_block_start = text.find('{% for f in features %}')
         loop_block_end = text.find('{% endfor %}', loop_block_start)
-        loop_block = text[loop_block_start:loop_block_end+len('{% endfor %}')]
-        item_tpl = loop_block.split('%}')[1].split('{%')[0]
-        rendered_items = ''.join(item_tpl.replace('{{f}}', f) for f in ctx.get('features', []))
-        text = text.replace(loop_block, rendered_items)
+        if loop_block_start != -1 and loop_block_end != -1:
+            loop_block = text[loop_block_start:loop_block_end+len('{% endfor %}')]
+            item_tpl = loop_block.split('%}')[1].split('{%')[0]
+            rendered_items = ''.join(item_tpl.replace('{{f}}', f) for f in ctx.get('features', []))
+            text = text.replace(loop_block, rendered_items)
     # simple replace for a subset of {{}} keys
     def replace_simple(s: str, key: str, val: str) -> str:
         return s.replace('{{'+key+'}}', val)
@@ -28,6 +30,9 @@ def render(template: str, ctx: dict) -> str:
     # joiners
     apis = ', '.join(ctx.get('apis', [])) if ctx.get('apis') else 'None'
     text = text.replace("{{apis | join(\", \") if apis else 'None'}}", apis)
+
+    # support upper filter for backend
+    text = text.replace('{{backend | upper}}', ctx.get('backend', 'none').upper())
 
     replacements = {
         'name': ctx.get('name',''),
