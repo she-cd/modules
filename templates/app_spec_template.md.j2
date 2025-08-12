@@ -1,0 +1,80 @@
+# {{name}}（{{id}}）
+
+- 类别: {{category}}
+- 预估MAU: {{mauEstimate}}
+- 目标平台: HarmonyOS 5.1（ArkUI-TS，Stage）
+- 开发估时: {{timeHours}} 小时
+- 功能完整度: {{completeness}}%
+- 设备能力: {{apis | join(", ") if apis else 'None'}}
+- 后端依赖: {{backend | upper}}
+
+## 一、产品概述
+- 问题与价值: {{overview}}
+- 目标用户: {{targetUsers}}
+- 使用场景: {{scenarios}}
+- 竞品要点: {{competitors}}
+
+## 二、核心功能清单
+{% for f in features %}- [ ] {{f}}
+{% endfor %}
+
+### 非功能性要求
+- 启动时间 < 1s（冷启动）
+- 首屏 3 秒内可完成一次核心操作
+- 离线优先；数据本地化存储（如 `Preferences`/`RDB`）
+- 弱网/断网可用；可选云同步（如有）
+
+## 三、信息架构与状态模型
+- 页面结构: {{ux.pages}}
+- 关键状态: {{ux.states}}
+- 空间/卡片: {{ux.cards}}
+
+## 四、数据模型
+```ts
+{{dataModel}}
+```
+
+## 五、权限与系统能力
+- 所需权限: {{permissions}}
+- 能力说明: {{capabilityNotes}}
+
+## 六、接口与后端
+- 后端类型: {{backend}}
+- 接口清单: {{apisDesign}}
+- 缓存与同步: {{cacheSync}}
+- 限流与配额: {{quota}}
+
+## 七、埋点与分析
+- 关键路径: {{analytics.paths}}
+- 事件清单: {{analytics.events}}
+- 指标: DAU/MAU、首屏转化、7/30日留存、使用时长
+
+## 八、质量与测试
+- 单元测试: 核心计算/格式化/解析
+- UI 测试: 关键流程录制
+- 设备兼容: 不同分辨率、横竖屏、深色模式
+- 性能: 内存占用、CPU 峰值、IO 次数
+
+## 九、本地化与无障碍
+- 语言: zh-CN, en-US
+- 无障碍: 语义标签、字号/对比度、屏幕阅读
+
+## 十、发布与合规
+- 隐私与权限弹窗说明
+- 使用条款/隐私政策链接
+- 截图与视频、图标、描述与关键词
+
+## 十一、开发计划
+- Day 0: 需求细化与 UI 草图
+- Day 1: 页面骨架与状态管理
+- Day 2: 核心功能与存储
+- Day 3: 打磨、埋点与测试，准备上架物料
+
+## 十二、资源需求
+- 人力: ArkUI 前端 x1
+- 设计: 组件库复用；图标/截图自动化
+- 后端: {{backendNotes}}
+
+## 十三、风险与对策
+- 风险: {{risks}}
+- 应对: {{mitigations}}
